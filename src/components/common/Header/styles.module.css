@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  grid-area: header;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.3rem;
+  background-color: rgb(243 232 243 / 80%);
+}
+
+.iconUser {
+  font-size: 1.4rem;
+}
+
+.iconCar {
+  font-size: 1.8rem;
+
+}

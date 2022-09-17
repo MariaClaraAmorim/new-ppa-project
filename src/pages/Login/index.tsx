@@ -1,19 +1,20 @@
 import { Button, Input } from "@chakra-ui/react";
+import { AiOutlineEyeInvisible } from "react-icons/ai";
 import css from "./styles.module.css";
 
-import { AiOutlineEyeInvisible } from "react-icons/ai";
 function Login() {
   return (
     <>
-      <article className={css.containerLogin}>
-        <article className={css.inputLogin}>
+      <div className={css.content}>
+        <form action="" className={css.form}>
           <ul className={css.title}>
-            <li>Login</li>
+            <a href="/login">
+              <li>Login</li>
+            </a>
             <a href="/cadastro">
               <li>Cadastro</li>
             </a>
           </ul>
-
           <div className={css.box}>
             <input type="text" required />
             <span>CPF</span>
@@ -23,25 +24,22 @@ function Login() {
             <input type="password" required />
             <span>
               Senha
-              <AiOutlineEyeInvisible />
+              {/* <AiOutlineEyeInvisible /> */}
             </span>
             <i></i>
           </div>
+          <div className={css.teste}>
+            <a href="/">
+              <Button className={css.btn}>Entrar</Button>
+            </a>
+            <p>Esqueci minha senha</p>
+          </div>
+        </form>
 
-          <a href="/home">
-            <Button colorScheme="blue">Entrar</Button>
-          </a>
-          <p>Esqueci minha senha</p>
-        </article>
-
-        <article>
+        <div className={css.bloco2}>
           <img className={css.imgLogin} src="public\vetorcanto.png" />
-        </article>
-      </article>
-      <footer>
-        <p>Sistema Cocoricó</p>
-        <p>2022</p>
-      </footer>
+        </div>
+      </div>
     </>
   );
 }

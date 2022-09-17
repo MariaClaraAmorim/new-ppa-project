@@ -1,14 +1,12 @@
-import "./App.css";
-
-import React from "react";
-import RoutesApp from "./routes";
-
-import { Button, Input } from "@chakra-ui/react";
+import "./styles/GlobalStyles.css";
+import { RoutesApp } from "./routes";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <RoutesApp />
-
+    <BrowserRouter>
+      <RoutesApp />
+    </BrowserRouter>
   );
 }
 

@@ -1,35 +1,95 @@
-.containerLogin {
+.tudo {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 5rem;
-  padding: 2rem;
+  padding: 10rem 10%;
+  gap: 2rem;
 }
 
-.inputLogin {
+@media screen and (max-width: 690px) {
+  .tudo {
+    flex-wrap: wrap;
+  }
+}
+.content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 10rem 10%;
+  gap: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    flex-wrap: wrap;
+  }
+}
+
+.content2 {
+  align-items: center;
+  /* display: flex; */
+  justify-content: center;
+  padding: 10rem 10%;
+  gap: 3rem;
+}
+.form {
+  width: 20rem;
+}
+
+@media screen and (max-width: 400px) {
+  .form {
+    width: 10rem;
+  }
+}
+
+.input {
 }
 
 .title {
   display: flex;
-  color: white;
   gap: 2rem;
-  list-style: none;
+  justify-content: center;
 }
+
+.imgLogin {
+  width: 100%;
+  max-width: 30rem;
+  min-width: 10rem;
+  height: 100%;
+  min-height: 10rem;
+  max-height: 25rem;
+}
+
+@media screen and (max-width: 600px) {
+  .imgLogin {
+    width: 100%;
+    max-width: 20rem;
+    min-width: 10rem;
+    height: 100%;
+    min-height: 10rem;
+    max-height: 15rem;
+  }
+}
+
+/* p {
+  color: white;
+} */
 
 .box {
   position: relative;
-  width: 280px;
-  margin-bottom: 25px;
+  /* width: 280px;
+  width: 50%; */
+
+  margin-bottom: 1rem;
 }
 
 .box input {
   width: 100%;
-  padding: 10px 0 5px;
-  color: #212529;
+  padding: 0.8rem;
+  color: #fff;
   border: none;
   outline: none;
-  font-size: 1em;
+  font-size: 1rem;
   letter-spacing: 0.1em;
   background: transparent;
   box-shadow: none;
@@ -38,8 +98,8 @@
 .box span {
   position: absolute;
   left: 0;
-  color: #adb5bd;
-  padding: 10px 0 5px;
+  color: #fff;
+  padding: 0.4rem 0 1rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   pointer-events: none;
@@ -48,7 +108,7 @@
 
 .box input:valid ~ span,
 .box input:focus ~ span {
-  color: #495057;
+  color: #fff;
   transform: translatey(-20px);
   font-size: 0.8em;
 }
@@ -70,7 +130,7 @@
   height: 100%;
   left: -100%;
   background: linear-gradient(
-    90deg,
+    50deg,
     #212529,
     #f8f9fa,
     #e9ecef,
@@ -100,12 +160,15 @@
   }
 }
 
+.teste {
+  text-align: center;
+  color: #fff;
+}
 
-.btn{
-    background: #060552;
-    color: white;
-    border: 1px solid white;
-    border-radius: 0.4rem;
-    padding: 0.4rem;
-    cursor: pointer;
+.btn {
+  background: #fff;
+  color: #060552;
+  padding: 0.4rem;
+  border: 0.2rem solid #060552;
+  border-radius: 0.5rem;
 }

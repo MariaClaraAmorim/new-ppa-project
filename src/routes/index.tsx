@@ -1,26 +1,53 @@
-import React from "react";
-import { Fragment } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import App from "../App";
+import { Route, Routes } from "react-router-dom";
+import { MainTemplate } from "../layout/MainTemplate";
+import { MainTemplateLogin } from "../layout/MainTemplateLogin";
 import { Cadastro } from "../pages/Cadastro";
 import { Home } from "../pages/Home";
 import { Login } from "../pages/Login";
+import { Resultados } from "../pages/Resultados";
 
-const RoutesApp = () => {
+function RoutesApp() {
   return (
     /* Rotas que serão usadas */
-    <BrowserRouter>
-      <Fragment>
-        <Routes>
-          <Route path="/" element={<Login />} />
 
-          <Route path="/cadastro" element={<Cadastro />} />
+    <Routes>
+      <Route
+        path="/login"
+        element={
+          <MainTemplateLogin>
+            <Login />
+          </MainTemplateLogin>
+        }
+      />
 
-          <Route path="/home" element={<Home />} />
-        </Routes>
-      </Fragment>
-    </BrowserRouter>
+      <Route
+        path="/cadastro"
+        element={
+          <MainTemplateLogin>
+            <Cadastro />
+          </MainTemplateLogin>
+        }
+      />
+
+      <Route
+        index
+        element={
+          <MainTemplate>
+            <Home />
+          </MainTemplate>
+        }
+      />
+
+      <Route
+        path="/resultados"
+        element={
+          <MainTemplate>
+            <Resultados />
+          </MainTemplate>
+        }
+      />
+    </Routes>
   );
-};
+}
 
-export default RoutesApp;
+export { RoutesApp };
