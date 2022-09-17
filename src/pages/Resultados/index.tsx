@@ -13,7 +13,6 @@ import {
   ModalBody,
   ModalCloseButton,
 } from "@chakra-ui/react";
-import Pagination from "../../components/ui/Pagination/Pagination";
 import Checkbox from "@mui/material/Checkbox";
 
 function Resultados() {
