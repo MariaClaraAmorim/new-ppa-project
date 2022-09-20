@@ -1,0 +1,46 @@
+.testeee {
+  background-color: rgb(243 232 243 / 100%);
+}
+
+.opa {
+  background-color: black;
+}
+
+.description{
+    color: #060552;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: rgb(243 232 243 / 80%);
+}
+
+.item {
+  transition: all 1s ease;
+  width: 0;
+  list-style: none;
+}
+
+.itemVisible {
+  width: 5rem;
+  transition: all 1s ease;
+  list-style: none;
+}
+
+@media (max-width: 420px) {
+  .aside {
+    /* display: none; */
+
+    width: 4rem;
+  }
+}
+
+.hamburguer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.iconHamburguer {
+  font-size: 1.4rem;
+}

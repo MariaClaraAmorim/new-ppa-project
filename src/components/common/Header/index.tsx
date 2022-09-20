@@ -1,4 +1,5 @@
 import { AiOutlineShoppingCart, AiOutlineUser } from "react-icons/ai";
+
 import css from "./styles.module.css";
 
 function Header() {
@@ -14,8 +15,12 @@ function Header() {
           <stop stopColor="#591885" offset="100%" />
         </linearGradient>
       </svg>
-
-      <AiOutlineShoppingCart className={css.iconCar} style={{ fill: "url(#blue-gradient)" }} />
+      <a href="/carrinho">
+        <AiOutlineShoppingCart
+          className={css.iconCar}
+          style={{ fill: "url(#blue-gradient)" }}
+        />
+      </a>
     </div>
   );
 }
