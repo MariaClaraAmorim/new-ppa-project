@@ -1,10 +1,26 @@
 .header {
   display: flex;
   grid-area: header;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   gap: 0.3rem;
   background-color: rgb(243 232 243 / 80%);
+}
+
+.details {
+  display: flex;
+}
+
+.imgHeader {
+  width: 7rem;
+  height: 7rem;
+}
+
+@media screen and (max-width: 400px) {
+  .imgHeader {
+    width: 5rem;
+    height: 5rem;
+  }
 }
 
 .iconUser {
@@ -13,5 +29,4 @@
 
 .iconCar {
   font-size: 1.8rem;
-
 }
