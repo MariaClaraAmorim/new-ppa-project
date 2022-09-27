@@ -1,4 +1,4 @@
-table {
+/* table {
   border: 1px solid #ccc;
   border-collapse: collapse;
   margin: 0;
@@ -80,23 +80,138 @@ table th {
   padding: 0.3rem;
   border-radius: 0.3rem;
   background-color: #060552;
+} */
+
+table {
+  /* display: flex; */
+  flex-direction: column;
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
 }
 
-.teste {
-  background: red;
-  border-radius: 50%;
-  width: 10%;
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+
+table tr {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+table tbody {
+  width: 100%;
+}
+
+.status {
   display: flex;
   justify-content: center;
-  border: 1px solid;
+  align-items: center;
 }
 
-/* .dialog {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  .status {
+    justify-content: space-between;
+  }
+}
+
+.btn {
+  color: #fff;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  background-color: #060552;
+}
+
+.radius {
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+#statusRed {
+  background-color: red;
+}
+
+#statusGreen {
+  background-color: green;
+}
+
+#statusYellow {
+  background-color: yellow;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-height: 20rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 
 .dialog {
   display: flex;
@@ -109,10 +224,14 @@ table th {
   border: 1px solid;
 }
 
-
-.acoes{
+.acoes {
   display: flex;
-    gap: 1rem;
-    justify-content: center;
-    padding: 1rem;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
 }
