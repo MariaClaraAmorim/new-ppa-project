@@ -65,6 +65,7 @@ const BpCheckedIcon = styled(BpIcon)({
 
 import css from "./styles.module.css";
 import { Button } from "@chakra-ui/button";
+import { Upload } from "../../../components/ui/Dialog/Upload";
 
 function BpRadio(props: RadioProps) {
   return (
@@ -204,7 +205,8 @@ function CadProduto() {
         </div>
 
         <div>
-          <p>Aqui será o anexo de nota fiscal</p>
+          <p>Nota Fiscal</p>
+          <Upload/>
         </div>
       </div>
 
