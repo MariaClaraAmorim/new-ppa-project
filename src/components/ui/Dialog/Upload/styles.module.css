@@ -1,0 +1,9 @@
+.btnUpload {
+  display: flex;
+  background-color: rgb(217, 217, 217);
+  height: 4rem;
+  width: 10rem;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+}
