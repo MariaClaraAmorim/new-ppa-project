@@ -1,0 +1,45 @@
+.container {
+    width: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--primary);
+    background-color: var(--surface);
+    color: var(--on-surface);
+  }
+  
+  .button {
+    cursor: pointer;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem;
+    border-radius: 50%;
+  }
+  
+  .button:hover {
+    outline: 1px solid #060552;
+  }
+  
+  .inputNumber {
+    width: 100%;
+    min-width: 3ch;
+    text-align: center;
+    appearance: none;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+  }
+  
+  .inputNumber::focus {
+    outline: none;
+  }
+  
+  .inputNumber::-webkit-inner-spin-button {
+    appearance: none;
+  }
