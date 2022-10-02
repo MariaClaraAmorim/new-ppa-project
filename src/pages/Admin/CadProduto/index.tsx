@@ -1,13 +1,3 @@
-// import React from "react";
-// import FormGroup from "@mui/material/FormGroup";
-// import Checkbox from "@mui/material/Checkbox";
-
-// import Radio from "@mui/material/Radio";
-// import RadioGroup from "@mui/material/RadioGroup";
-// import FormControlLabel from "@mui/material/FormControlLabel";
-// import FormControl from "@mui/material/FormControl";
-// import FormLabel from "@mui/material/FormLabel";
-
 import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Radio, { RadioProps } from "@mui/material/Radio";
@@ -66,6 +56,7 @@ const BpCheckedIcon = styled(BpIcon)({
 import css from "./styles.module.css";
 import { Button } from "@chakra-ui/button";
 import { Upload } from "../../../components/ui/Dialog/Upload";
+import { Quantity } from "../../../components/ui/Quantity";
 
 function BpRadio(props: RadioProps) {
   return (
@@ -167,10 +158,11 @@ function CadProduto() {
               />
             </RadioGroup>
           </FormControl>
-        </div>
 
-        <div>
-          <p>Aqui será o componente quantity</p>
+          <div>
+            <p>Quantidade</p>
+            <Quantity />
+          </div>
         </div>
 
         <div>
@@ -206,7 +198,7 @@ function CadProduto() {
 
         <div>
           <p>Nota Fiscal</p>
-          <Upload/>
+          <Upload />
         </div>
       </div>
 
