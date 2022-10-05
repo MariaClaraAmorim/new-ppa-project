@@ -5,6 +5,8 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 
 import TextareaAutosize from "@mui/material/TextareaAutosize";
 
@@ -92,7 +94,7 @@ function CadProduto() {
     <section className={css.teste}>
       <h1 className={css.title}>Cadastrar produto</h1>
       <div>
-        <p className={css.description}>(Retornar aqui o nome do produto)</p>
+        <p className={css.description}></p>
       </div>
       <div className={css.grid}>
         <div>
@@ -177,6 +179,8 @@ function CadProduto() {
                 height: 100,
                 backgroundColor: "#D9D9D9",
                 border: "1px solid",
+                fontSize: "0.9em",
+                padding: "5px"
               }}
             />
           </div>
@@ -191,6 +195,8 @@ function CadProduto() {
                 height: 100,
                 backgroundColor: "#D9D9D9",
                 border: "1px solid",
+                fontSize: "0.9em",
+                padding: "5px"
               }}
             />
           </div>
@@ -198,14 +204,22 @@ function CadProduto() {
 
         <div>
           <p>Nota Fiscal</p>
-          <Upload />
+          <Upload/>
         </div>
+
+        <div>
+          <p>Nome do Produto</p>
+          <TextField id="filled-basic" label="Filled" variant="outlined" className={css.inputName}/>
+        </div>
+
       </div>
 
       <div className={css.action}>
-        <Button className={css.btn} variant="contained">
-          Voltar
-        </Button>
+        <a href="/Admin/Home">
+          <Button className={css.btn} variant="contained">
+            Voltar
+          </Button>
+        </a>
         <Button className={css.btn} variant="contained">
           Cadastrar
         </Button>

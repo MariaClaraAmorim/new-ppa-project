@@ -1,6 +1,5 @@
 .title {
-  font-family: cursive;
-  /* text-align: center; */
+  text-align: center;
   padding-top: 2rem;
 }
 @media screen and (max-width: 400px) {
@@ -11,15 +10,17 @@
 
 .description {
   padding-top: 1rem;
-  border-bottom: 1px solid;
-  width: 50%;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  width: 100vw;
+  padding-bottom: 0.4rem;
 }
 
 .grid {
   display: flex;
   gap: 3rem;
   padding: 1rem 5%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 900px) {
@@ -50,6 +51,11 @@
   color: #fff;
   padding: 0.6rem;
   border-radius: 0.3rem;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #38AECC;
 }
 
 @media screen and (max-width: 400px) {
@@ -63,5 +69,3 @@
     flex-wrap: wrap;
   }
 }
-
-

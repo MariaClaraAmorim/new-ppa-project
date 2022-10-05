@@ -1,5 +1,4 @@
 import { Button } from "@chakra-ui/button";
-
 import css from "./styles.module.css";
 function AdminHome() {
   return (
