@@ -5,16 +5,11 @@
   grid-template-rows: 80px 1fr 80px;
   grid-template-areas: "aside header" "aside main" "aside footer";
   height: 100vh;
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  background: rgb(117, 63, 134);
   background: linear-gradient(
-    0deg,
-    rgba(117, 63, 134, 1) 10%,
-    rgba(178, 169, 187, 1) 40%,
-    rgba(210, 206, 249, 1) 69%
+    beige, cornsilk, aliceblue
   );
 }
 

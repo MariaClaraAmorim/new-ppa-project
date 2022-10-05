@@ -24,6 +24,10 @@
   padding-bottom: 2rem;
 }
 
+.teste {
+  line-height: 40px;
+}
+
 .imgLogin {
   width: 100%;
   max-width: 30rem;
@@ -137,4 +141,10 @@
   padding: 0.4rem;
   border: 0.2rem solid #060552;
   border-radius: 0.5rem;
+  transition: 0.5s
+}
+
+.btn:hover {
+  background-color: #060552;
+  color: white;
 }

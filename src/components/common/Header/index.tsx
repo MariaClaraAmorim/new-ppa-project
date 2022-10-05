@@ -7,8 +7,7 @@ function Header() {
     <div className={css.header}>
       <div>
         {/* <img src="public\LogoHeader.png" alt="" /> */}
-
-        <img className={css.imgHeader} src="\public\LogoHeader.png" />
+        <a href="#"><img className={css.imgHeader} src="\public\LogoHeader.png" /></a>
       </div>
       <div className={css.details}>
         <AiOutlineUser className={css.iconUser} />
