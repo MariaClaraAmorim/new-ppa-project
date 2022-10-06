@@ -5,9 +5,9 @@ import { Login } from "../pages/Login";
 import { CadProduto } from "../pages/Admin/CadProduto";
 import { AdminHome } from "../pages/Admin/Home";
 import { Home } from "../pages/Usuario/Home";
-import { Cadastro } from "../pages/Usuario/Cadastro";
 import { Resultados } from "../pages/Usuario/Resultados";
 import { Carrinho } from "../pages/Usuario/Carrinho";
+import { Cadastro } from "../pages/Cadastro";
 
 function RoutesApp() {
   return (
