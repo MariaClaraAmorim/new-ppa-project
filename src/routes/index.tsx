@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import { MainTemplate } from "../layout/MainTemplate";
 import { MainTemplateLogin } from "../layout/MainTemplateLogin";
+import { Login } from "../pages/Login";
 import { CadProduto } from "../pages/Admin/CadProduto";
 import { AdminHome } from "../pages/Admin/Home";
-import { Cadastro } from "../pages/Cadastro";
-import { Carrinho } from "../pages/Carrinho";
-import { Home } from "../pages/Home";
-import { Login } from "../pages/Login";
-import { Resultados } from "../pages/Resultados";
+import { Home } from "../pages/Usuario/Home";
+import { Cadastro } from "../pages/Usuario/Cadastro";
+import { Resultados } from "../pages/Usuario/Resultados";
+import { Carrinho } from "../pages/Usuario/Carrinho";
 
 function RoutesApp() {
   return (
