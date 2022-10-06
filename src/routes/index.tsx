@@ -8,6 +8,8 @@ import { Home } from "../pages/Usuario/Home";
 import { Resultados } from "../pages/Usuario/Resultados";
 import { Carrinho } from "../pages/Usuario/Carrinho";
 import { Cadastro } from "../pages/Cadastro";
+import { Estoque } from "../pages/Admin/Estoque";
+import { Requisições } from "../pages/Admin/Requisições";
 
 function RoutesApp() {
   return (
@@ -73,6 +75,24 @@ function RoutesApp() {
         element={
           <MainTemplate>
             <CadProduto />
+          </MainTemplate>
+        }
+      />
+
+      <Route
+        path="/admin/estoque"
+        element={
+          <MainTemplate>
+            <Estoque />
+          </MainTemplate>
+        }
+      />
+
+      <Route
+        path="/admin/requisicoes"
+        element={
+          <MainTemplate>
+            <Requisições />
           </MainTemplate>
         }
       />
