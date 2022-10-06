@@ -15,7 +15,7 @@ import {
   ModalCloseButton,
 } from "@chakra-ui/react";
 import Checkbox from "@mui/material/Checkbox";
-import { Quantity } from "../../components/ui/Quantity";
+import { Quantity } from "../../../components/ui/Quantity";
 function Resultados() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
@@ -128,7 +128,8 @@ function Resultados() {
 
               <div>
                 <p className={css.products}>
-                  Caneta Bic (Caixa)<Quantity />
+                  Caneta Bic (Caixa)
+                  <Quantity />
                   <Checkbox {...label} defaultChecked />
                 </p>
                 <p className={css.products}>
