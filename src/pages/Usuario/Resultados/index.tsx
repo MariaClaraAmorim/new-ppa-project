@@ -22,7 +22,7 @@ function Resultados() {
   return (
     <>
       <table className={css.table}>
-        <caption>Tabela responsiva</caption>
+        {/* <caption>Tabela responsiva</caption>
         <thead className={css.thead}>
           <tr className={css.tr}>
             <th scope="col">Produto</th>
@@ -112,7 +112,7 @@ function Resultados() {
               </td>
             </tr>
           </tbody>
-        </div>
+        </div> */}
       </table>
 
       <div>
@@ -128,8 +128,7 @@ function Resultados() {
 
               <div>
                 <p className={css.products}>
-                  Caneta Bic (Caixa)
-                  <Quantity />
+                  Caneta Bic (Caixa)<Quantity />
                   <Checkbox {...label} defaultChecked />
                 </p>
                 <p className={css.products}>
