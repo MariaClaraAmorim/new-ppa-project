@@ -1,5 +1,4 @@
 table {
-  /* display: flex; */
   flex-direction: column;
   border: 1px solid black;
   border-collapse: collapse;
@@ -53,7 +52,7 @@ table tbody {
 }
 
 .btn:hover {
-  background-color: #38AECC;
+  background-color: #38aecc;
 }
 
 .thead .th:last-child {
@@ -147,10 +146,10 @@ table tbody {
   .thead .th:first-child {
     width: auto;
   }
-  
+
   .tbody .tr td:first-child {
     width: auto;
-  }  
+  }
 
   .icons {
     margin-right: 0;
