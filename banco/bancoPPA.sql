@@ -15,7 +15,7 @@ id_area integer not null,
 foreign key (id_area)  references area_depar (id_area)); 
 
 CREATE TABLE requisicao( 
- status varchar(10),  
+ stats varchar(10),  
  id_req integer auto_increment primary key, 
  dataReq date,  
  id_servidor integer not null,
