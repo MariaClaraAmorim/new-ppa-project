@@ -82,8 +82,8 @@ table th {
   background-color: #060552;
 } */
 
-table {
-  /* display: flex; */
+/* table {
+
   flex-direction: column;
   border: 1px solid black;
   border-collapse: collapse;
@@ -121,13 +121,9 @@ table th {
 
 table tbody {
   width: 100%;
-}
+} 
 
-.status {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 @media screen and (max-width: 600px) {
   table {
@@ -177,7 +173,13 @@ table tbody {
     justify-content: space-between;
   }
 }
+*/
 
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .btn {
   color: #fff;
   padding: 0.3rem;
